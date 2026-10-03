@@ -98,7 +98,7 @@ ai-stock-research-assistant/
 
 ## Installation
 
-Use Python 3.11 or later. This project was tested locally with Python 3.14; CI is configured for Python 3.12 but has not been run on GitHub yet.
+Use Python 3.11 or later. This project was tested locally with Python 3.14; GitHub Actions tests also passed on Ubuntu with Python 3.12.
 
 ```sh
 python3 -m venv .venv
@@ -257,7 +257,7 @@ See [provenance and screenshot instructions](screenshots/README.md). Live interf
 - Model output may still contain unsupported prose or incomplete answers.
 - Conservative numerical report checks can withhold results; exact values remain accessible in Python tables.
 - Local single-user serving; no production authentication, centralized cache, deployment, or monitoring.
-- CI configuration is included but a GitHub-hosted run has not occurred.
+- GitHub Actions tests passed; a production deployment has not been tested.
 
 Next improvements: section-aware chunks, full independent evaluation, claim-level citation checks, automated filing freshness/version filters, richer market-data access, structured metric provenance, and deployment with a limited role. Optimize retrieval and evaluate before adding more services.
 
