@@ -267,7 +267,7 @@ Next improvements: section-aware chunks, full independent evaluation, claim-leve
 
 ## GitHub
 
-The local repository is intended to be GitHub-ready. No remote repository has been published and no secrets should be added. Review staged files and push to your own repository when ready. The included workflow runs offline tests; AWS credentials are not required for it.
+Published publicly at [ambatiroshan7-source/ai-stock-research-assistant](https://github.com/ambatiroshan7-source/ai-stock-research-assistant). The repository includes source code, public filings, recorded evaluation samples, and labeled visual previews. Local secrets and AWS resource records are excluded. The workflow runs offline tests; AWS credentials are not required for it.
 
 ## Resource cleanup
 
