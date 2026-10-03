@@ -19,7 +19,7 @@ It does not predict stock prices, guarantee returns, or issue BUY/SELL recommend
 - Local TF-IDF vector retrieval fallback using overlapping chunks and cosine similarity.
 - Financial comparison table and qualitative Bedrock comparison.
 - A 24-question evaluation framework with real sampled outputs, latency, and candid review notes.
-- Unit and Streamlit interaction tests, GitHub Actions configuration, and an interview guide.
+- Unit and Streamlit interaction tests and GitHub Actions configuration.
 
 ## What was verified
 
@@ -85,7 +85,6 @@ ai-stock-research-assistant/
 ├── .env.example
 ├── .gitignore
 ├── README.md
-├── INTERVIEW_PREP.md
 ├── data/filings/           # Public extracted text and source metadata
 ├── evaluation/            # Questions, real outputs, review methodology
 ├── tests/
@@ -260,10 +259,6 @@ See [provenance and screenshot instructions](screenshots/README.md). Live interf
 - GitHub Actions tests passed; a production deployment has not been tested.
 
 Next improvements: section-aware chunks, full independent evaluation, claim-level citation checks, automated filing freshness/version filters, richer market-data access, structured metric provenance, and deployment with a limited role. Optimize retrieval and evaluate before adding more services.
-
-## Interview preparation
-
-[INTERVIEW_PREP.md](INTERVIEW_PREP.md) contains understandable answers to all 18 requested questions, including model choice, RAG, evaluation, security, scaling, latency, and cost. It distinguishes implemented behavior from proposed production improvements.
 
 ## GitHub
 
