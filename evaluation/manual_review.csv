@@ -1,0 +1,7 @@
+mode,question_id,retrieval_relevance,answer_support,citation_mapping,unsupported_claims,limitations,latency_seconds
+local,Q01,relevant competition excerpts; one unrelated governance chunk,main claims supported; coverage limited to selected passages,valid mappings,no unsupported claim identified in sampled answer,not independently reviewed,1.884
+local,Q02,relevant supply chain excerpts,claims supported by source excerpts; non-exhaustive,valid mappings,no unsupported claim identified in sampled answer,not independently reviewed,2.065
+local,Q03,cybersecurity program and materiality passages; substantive risk coverage incomplete,narrow summary supported; does not enumerate important risk impacts,valid mappings,no unsupported claim identified; incomplete coverage,needs broader retrieval,1.203
+knowledge_base,Q01,competition passage retrieved; introductory chunk less relevant,mostly supported,valid mappings,innovate continuously is not explicit in cited source three,minor embellishment,2.575
+knowledge_base,Q02,relevant supply chain and component shortage passages,claims supported by cited excerpts; non-exhaustive,valid mappings,no unsupported claim identified in sampled answer,not independently reviewed,3.071
+knowledge_base,Q03,substantive cybersecurity risk and governance passages,main risk claims supported by cited excerpts,valid mappings,no unsupported claim identified in sampled answer,not independently reviewed,3.07

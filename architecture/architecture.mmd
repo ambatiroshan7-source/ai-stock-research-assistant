@@ -1,0 +1,21 @@
+flowchart TD
+    User --> UI[Streamlit UI]
+    UI --> Python[Python orchestration]
+    Python --> API[Alpha Vantage financial API]
+    SEC[SEC submissions and 10-K HTML] --> Ingest[Download, extract text, attach metadata]
+    Ingest --> S3[Private S3 document bucket]
+    Ingest --> Local[Local TF-IDF vector retrieval]
+    S3 --> KB[Bedrock Knowledge Base]
+    KB --> Embed[Titan Text Embeddings V2]
+    Embed --> Vectors[S3 Vectors index]
+    Vectors --> KB
+    KB --> Context[Company-filtered source passages]
+    Local --> Context
+    API --> Facts[Python metrics with periods and missing values]
+    Facts --> UI
+    Facts --> Qualitative[Deterministic qualitative observations]
+    Context --> Prompts[Grounded prompts]
+    Qualitative --> Prompts
+    Prompts --> Bedrock[Nova Lite via Converse]
+    Bedrock --> Checks[Citation range and report numeric checks]
+    Checks --> UI
